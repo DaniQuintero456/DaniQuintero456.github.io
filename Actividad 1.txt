@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--LLenar los datos para: Title y metadata-->
+      <title>Unidad 01 |Act</title>
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <meta charset="utf-8">
+      <meta name: "Autor" content:"Daniel Bustamante Quintero">
+      <meta name: "Fecha" content:"Miercoles 05 de Febrero de 2025">
+      <meta name: "Descripción" content:"Hola mundo">
+    </head>
+    <body>
+        <!--Cambiar el titulo y poner el contenido aqui-->
+        <h1>Unidad# | Actividad: 01 :: Tema(Estructura HTML5)</h1>
+      Hola mundooo!!
+    </body>
+</html>
