@@ -3,7 +3,7 @@
 ### 0177111 Daniel Bustamante Quintero
 :construction: Proyecto en construcción :construction:
 
-> Liga de acceso: https://https://daniquintero456.github.io/
+> Liga de acceso: https://https://daniquintero456.github.io
 
  - **`Unidad 1`**
    - `Actividad No. 1` *Hola mundo* **[ Link ]**
