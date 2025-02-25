@@ -1,56 +1,30 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <title>Unidad 1 | Actividad 07</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <meta charset="utf-8">
-    <meta name="Autor" content="Daniel Bustamante Quintero">
-    <meta name="Fecha" content="viernes 14 de febrero de 2025">
-    <meta name="Descripción" content="Enlaces">
-</head>
-<body>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Programación Web I</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-    <h1>
-        💻 Portafolio 💻
-    </h1>
-    <h2>Programación Web I</h2>
-    <p><strong> 0177111-Bustamante Quintero Daniel </strong> </p>
-    
-    <ul>
-        <li>Unidad No. 1
-            <ol>
-                <li>Actividad No.1 (<em>Hola mundo</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%201.html">Link</a></li>
-                <li>Actividad No.2 (<em>Títulos</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%202.html">Link</a></li>
-                <li>Actividad No.2-1 (<em>Mapa de sitio</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%202.1.html">Link</a></li>
-                <li>Actividad No.3 (<em>Párrafo</em>) <a href="https://codehs.com/sandbox/id/actividad-3-mZZFYQ">Link</a></li>
-                <li>Actividad No.4 (<em>Listas </em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%204.html">Link</a></li>
-                <li>Actividad No.4-1 (<em>Plan de estudios</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%204.1.html">Link</a></li>
-                <li>Actividad No.5 (<em>Listas</em>) <a href="https://codehs.com/sandbox/id/actividad-5-Jaqrxw">Link</a></li>
-                <li>Actividad No.6 (<em>Widget</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%206.html">Link</a></li>
-                <li>Actividad No.7 (<em>Enlaces</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%207.html">Link</a></li>
-                <li>Actividad No.8 (<em>Imagenes</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%208.html">Link</a></li>
-                <li>Actividad No.9 (<em>Formatos</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%209.html">Link</a></li>
-                <li>Actividad No.9-1 (<em>Formatos</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%209.1.html">Link</a></li>
-                <li>Actividad No.10 (<em>Enlaces</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%2010.html">Link</a></li>
-            </ol>
-        </li>
-        <li>Unidad No. 2</li>
-        <li>Unidad No. 3</li>
-        <li>Proyecto</li>
-    </ul>
+# Portafolio
+## Programación Web I
+### 0177111 Rubén Cárdenas Sánchez
+:construction: Proyecto en construcción :construction:
 
-</body>
-</html>
+> Liga de acceso: https://cardenasanchezruben1986.github.io/
+
+ - **`Unidad 1`**
+   - `Actividad No. 1` *Hola mundo* **[ Link ]**
+   - `Actividad No. 2` *Títulos* **[ Link ]**
+   - `Actividad No. 2.1` *Mapa de sitio* **[ Link ]**
+   - `Actividad No. 3` *Párrafos* **[ Link ]**
+   - `Actividad No. 4` *Listas* **[ Link ]**
+   - `Actividad No. 4.1` *Plan de estudios* **[ Link ]**
+   - `Actividad No. 5` *Listas* **[ Link ]**
+   - `Actividad No. 6` *Widget* **[ Link ]**
+   - `Actividad No. 7` *Enlaces* **[ Link ]**
+   - `Actividad No. 8` *Imágenes* **[ Link ]**
+   - `Actividad No. 9` *Formatos* **[ Link ]**
+   - `Actividad No. 9.1` *Química orgánica* **[ Link ]**
+   - `Actividad No. 10` *Mapa* **[ Link ]**
+ - **`Unidad 2`**
+   - `Actividad No. ?` *...* **[ Link ]**
+ - **`Unidad 3`**
+   - `Actividad No. ?` *...* **[ Link ]**
+ - **`Proyecto`**
+   - `Proyecto` *...* **[ Link ]**
+
+> [!NOTE]
+> Basic writing and formatting syntax [GitHub Doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
