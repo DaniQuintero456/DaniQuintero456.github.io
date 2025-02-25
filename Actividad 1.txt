@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <!--LLenar los datos para: Title y metadata-->
-      <title>Unidad 01 |Act</title>
-      <link rel="icon" type="image/x-icon" href="favicon.ico">
-      <meta charset="utf-8">
-      <meta name: "Autor" content:"Daniel Bustamante Quintero">
-      <meta name: "Fecha" content:"Miercoles 05 de Febrero de 2025">
-      <meta name: "Descripción" content:"Hola mundo">
-    </head>
-    <body>
-        <!--Cambiar el titulo y poner el contenido aqui-->
-        <h1>Unidad# | Actividad: 01 :: Tema(Estructura HTML5)</h1>
-      Hola mundooo!!
-    </body>
+<html lang="es">
+<head>
+    <title>Unidad 1 | Actividad 07</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Daniel Bustamante Quintero">
+    <meta name="Fecha" content="viernes 14 de febrero de 2025">
+    <meta name="Descripción" content="Enlaces">
+</head>
+<body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Programación Web I</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        💻 Portafolio 💻
+    </h1>
+    <h2>Programación Web I</h2>
+    <p><strong> 0177111-Bustamante Quintero Daniel </strong> </p>
+    
+    <ul>
+        <li>Unidad No. 1
+            <ol>
+                <li>Actividad No.1 (<em>Hola mundo</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%201.html">Link</a></li>
+                <li>Actividad No.2 (<em>Títulos</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%202.html">Link</a></li>
+                <li>Actividad No.2-1 (<em>Mapa de sitio</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%202.1.html">Link</a></li>
+                <li>Actividad No.3 (<em>Párrafo</em>) <a href="https://codehs.com/sandbox/id/actividad-3-mZZFYQ">Link</a></li>
+                <li>Actividad No.4 (<em>Listas </em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%204.html">Link</a></li>
+                <li>Actividad No.4-1 (<em>Plan de estudios</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%204.1.html">Link</a></li>
+                <li>Actividad No.5 (<em>Listas</em>) <a href="https://codehs.com/sandbox/id/actividad-5-Jaqrxw">Link</a></li>
+                <li>Actividad No.6 (<em>Widget</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%206.html">Link</a></li>
+                <li>Actividad No.7 (<em>Enlaces</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%207.html">Link</a></li>
+                <li>Actividad No.8 (<em>Imagenes</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%208.html">Link</a></li>
+                <li>Actividad No.9 (<em>Formatos</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%209.html">Link</a></li>
+                <li>Actividad No.9-1 (<em>Formatos</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%209.1.html">Link</a></li>
+                <li>Actividad No.10 (<em>Enlaces</em>) <a href="file:///C:/Users/HP/Documents/Politecnica/Prog%20WEB/Actividad%2010.html">Link</a></li>
+            </ol>
+        </li>
+        <li>Unidad No. 2</li>
+        <li>Unidad No. 3</li>
+        <li>Proyecto</li>
+    </ul>
+
+</body>
 </html>
