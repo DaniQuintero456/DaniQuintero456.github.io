@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--LLenar los datos para: Title y metadata-->
+      <title>Examen Parcial 1</title>
+      <link rel="icon" type="image/x-icon" href="favicon.ico">
+      <meta charset="utf-8">
+      <meta name: "Autor" content:"Daniel Bustamante Quintero">
+      <meta name: "Fecha" content:"Viernes 21 de Febrero de 2025">
+      <meta name: "Descripción" content:"Examen Parcial practico">
+    </head>
+    <body>
+      <h1>Examen Parcial</h1>
+      <h2>Formatos
+        <h3>Ecuacion Cuadratica</h3>
+        <details name:imagen>
+        <summary width="885" height="689">
+        <img src="file:///C:/Users/187361/Downloads/progra%20web/Parabola.webp" alt="Imagen de una parabola">
+        </summary>
+        </details>
+        <p aling: "justify">
+            Una ecuacion cuadratica es aquella que tiene la forma 
+        </p>
+        <u> Ecuacion de segundo grado</u>
+        <p><market> ax<sup>2</sup>+bx+c</market></p>
+        <p aling: "justify">
+        Donde x es la variable y los valores a, b y c son los valores constantes</p>
+        <ol>
+            <li>cuadratico(a)</li>
+            <li>lineal (b)</li>
+            <li> constante (c)</li>
+        </ol>
+        <p aling: "justify">
+         Para una ecuacion cuadratica con coeficientes reales siempe hay 2 soluciones no necesariamente iguales Su formula general es: x=(-b±√b2-4ac)/2a
+        </p>
+        <h3>Area y volumem</h3>
+        <details name:imagen>
+        <summary width="885" height="689">
+        <img src= "file:///C:/Users/187361/Downloads/progra%20web/f%C3%B3rmulas-del-%C3%A1rea-y-volumen-de-la-geometr%C3%ADa-en-el-vector-blanco-fondo-image123426151.htm"alt="Imagen De diferentes areas y Volumenes">
+        </summary>
+        </details>
+        <h3>C++</h3>
+        <p aling: "justify">
+            El primer programa que se suele crear para su primer lenguaje de programacion suele ser el clasico <u>Hola mundo</u><br>En c++ Seria asi<br><b>#include iostream</b>using namespace std;<br> <b>int main(){</b><br>printf("Hola mundo");<br>return 0;<br>}
+        </p>
+        <p aling:"justify">
+            Si no has programado en este programa puede parecer que este escrito en chino esto, Vamos a empezar a definir
+            <ul>
+                
+            </ul>
+        </p>
+        
+        
+      
+           
+        <!--Cambiar el titulo y poner el contenido aqui-->
+    </body>
+</html>
