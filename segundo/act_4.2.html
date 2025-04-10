@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Unidad 2 Actividad 04-2</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <meta name="Autor" content="Bustamante Quintero Daniel">
+    <meta name="Fecha" content="Viernes 14 de marzo de 2025">
+    <meta name="Resumen" content="TIPOGRAFIA">
+    <style>
+        body {
+            font-family: 'Verdana', sans-serif;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: left;
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            font-family: 'Arial Black', sans-serif;
+            color: #2e8b57;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+            color: #444;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        li {
+            padding: 10px 15px;
+            border: 1px solid #ccc;
+            margin-bottom: 8px;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            transition: background-color 0.3s ease;
+        }
+
+        li:hover {
+            background-color: #d0f0d0;
+        }
+
+        #character-details {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e0ffe0;
+            font-weight: bold;
+        }
+
+        .character-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .character-container img {
+            width: 200px;
+            height: auto;
+            object-fit: contain;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            order: 2;
+        }
+
+        .character-container div {
+            flex-grow: 1;
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>UNIDAD 2 ACTIVIDAD 04-2:: TEMA (Lista, tablas e imágenes)</h1>
+    <h2>PERSONAJES DE Minecraft</h2>
+
+    <ul>
+        <li onclick="showCharacter('steve')">STEVE</li>
+        <li onclick="showCharacter('alex')">ALEX</li>
+        <li onclick="showCharacter('creeper')">CREEPER</li>
+        <li onclick="showCharacter('enderman')">ENDERMAN</li>
+        <li onclick="showCharacter('zombie')">ZOMBIE</li>
+    </ul>
+
+    <div id="character-details"></div>
+
+    <script>
+        function showCharacter(character) {
+            let data = {
+                steve: {
+                    name: "Steve",
+                    occupation: "Superviviente",
+                    abilities: "Construir, minar, luchar",
+                    firstAppearance: "Minecraft (2009)",
+                    characteristics: "Camisa azul, jeans, aspecto básico",
+                    image: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/43/Steve.png"
+                },
+                alex: {
+                    name: "Alex",
+                    occupation: "Superviviente",
+                    abilities: "Explorar, construir, combatir",
+                    firstAppearance: "Minecraft (2014)",
+                    characteristics: "Cabello rojo, camisa verde, valiente",
+                    image: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/0/09/Alex.png"
+                },
+                creeper: {
+                    name: "Creeper",
+                    occupation: "Enemigo explosivo",
+                    abilities: "Se acerca en silencio y explota",
+                    firstAppearance: "Minecraft (2009)",
+                    characteristics: "Color verde, sin brazos, explosivo",
+                    image: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/74/Creeper.png"
+                },
+                enderman: {
+                    name: "Enderman",
+                    occupation: "Criatura neutral",
+                    abilities: "Teletransportarse, levantar bloques",
+                    firstAppearance: "Minecraft Beta 1.8 (2011)",
+                    characteristics: "Alto, ojos morados, teme al agua",
+                    image: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/e/ed/Enderman.png"
+                },
+                zombie: {
+                    name: "Zombie",
+                    occupation: "Enemigo común",
+                    abilities: "Atacar en grupo, quemarse al sol",
+                    firstAppearance: "Minecraft (2009)",
+                    characteristics: "Piel verde, gruñidos, agresivo",
+                    image: "https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/25/Zombie.png"
+                }
+            };
+
+            let char = data[character];
+            let html = `
+                <div class="character-container">
+                    <div>
+                        <h2>${character.toUpperCase()}</h2>
+                        <table>
+                            <tr><th>Nombre</th><td>${char.name}</td></tr>
+                            <tr><th>Ocupación</th><td>${char.occupation}</td></tr>
+                            <tr><th>Habilidades</th><td>${char.abilities}</td></tr>
+                            <tr><th>Primera aparición</th><td>${char.firstAppearance}</td></tr>
+                            <tr><th>Características</th><td>${char.characteristics}</td></tr>
+                        </table>
+                    </div>
+                    <img src="${char.image}" alt="${character}">
+                </div>
+            `;
+            document.getElementById('character-details').innerHTML = html;
+        }
+    </script>
+
+</body>
+
+</html>
