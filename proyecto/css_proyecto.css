@@ -12,7 +12,7 @@
 
 /* Parte del fondo (track) */
   ::-webkit-scrollbar-track {
-  background-color: rgb(77, 86, 77);
+  background-image: url("https://i.pinimg.com/1200x/e9/90/4c/e9904cdb30314092a60f1ec18711bbbf.jpg");
   }
 
 /* Parte que se mueve (thumb) */
