@@ -1,174 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <title>Desarrollo</title>
-    <link rel="icon" type="image/x-icon" href="https://daniquintero456.github.io/favicon.ico">
-    <!-- Bootstrap CSS -->
     <style>
-        body {
-            background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Userbox_creeper.svg/1200px-Userbox_creeper.svg.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-color: rgba(0, 0, 0, 0.5); 
-            background-blend-mode: overlay;
-            color: white;
-        }
-        h1 {
-            font-family: 'Impact', 'Arial Black', Arial, sans-serif;
-            letter-spacing: 2px;
-            text-shadow: 2px 2px 4px #aaa;
-            padding-top: 60px;
-            text-align: center;
-            letter-spacing: 10px;
-        }
-        h2 {
-            font-family: 'Arial', sans-serif;
-            color: #eee300;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
-            text-align: left;
-        }
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 15px;
-            border: 5px solid #ffc107;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
-        }
-        p{
-            font-family: 'Arial', sans-serif;
-            color: #fff;
-            text-align: justify;
-            margin: 20px;
-            padding: 10px;
-            background-color: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            font-size: 20px
-        }
+        :root{
+      --amarillo :  #eeff00;
+      --verde_bajo : #3ffd00e2;
+      --verde_fuerte : #109710ea;
+      --azul_fer : #4fc3f7;
+      --azul_fer_fuerte: rgb(30, 78, 222);
+    }
+    /* Estilo general de la scrollbar */
+  ::-webkit-scrollbar {
+    width: 12px;              /* Ancho de la barra */
+  }
+
+/* Parte del fondo (track) */
+  ::-webkit-scrollbar-track {
+  background: green;      
+  }
+
+/* Parte que se mueve (thumb) */
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(14, 241, 14); /* Color del scroll */
+    border: 10px;       /* Bordes cuadrados */
+    border: 3px solid #000000; /* Borde para separación */
+  }
+
+/* Opcional: cuando pasas el mouse encima */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--amarillo);
+  }
+
+    body::selection{
+      color: green;
+      background-color: black;
+    }
+    html, body {
+        background: linear-gradient(black, green);
+        height: auto;
+        margin: 0;
+        font-family: 'Pixelify Sans', 'Sour Gummy';
+    }
+    h1{
+        font-family: 'Pixelify Sans', sans-serif;
+        letter-spacing: 2px;
+        text-shadow: 4px 2px 4px rgb(2, 246, 2);
+        padding-top: 60px;
+        text-align: center;
+        letter-spacing: 10px;
+        color: white;
+    }
+    .introduccion{
+        margin-top: 30px;
+        display: flex;
+        background-color: white;
+        margin-left: 10%;
+        margin-right: 10%;
+        transition-duration: 1s;
+        transition-property: matgin-top, background-color, box-shadow, outline;
+        transition-timing-function: ease;
+    }
+    .introduccion:hover{
+        background-color: var(--azul_fer_fuerte);
+        margin-top: 20px ;
+        box-shadow: -10px 20px 50px var(--verde_bajo);
+        outline: 3px solid var(--azul_fer);
+    }
+    .introduccion__item{
+        width: 50%;
+        margin: 10px;
+        height: 250px;        
+    }
+
+    .imagen{
+        background-image: url(imagenes/Actualizaciones.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .introduccion:hover .descripcion{
+        color: rgb(255, 255, 255);
+        font-size: 21.5px;
+        font-family: 'Sour Gummy';
+    }
+    .descripcion{
+        font-size: 20px;
+        overflow: hidden;
+        color: #000000;
+        transition-duration: 1s;
+        transition-property: color, font-size, font-family;
+        transition-timing-function: ease;
+    }
+    summary{
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.827);
+        margin-bottom: 10px;
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        border: 2px solid black;
+        border-radius: 2px;
+        text-align: center;
+        list-style: none;
+        transition-duration: 1s;
+        transition-property: all;
+        transition-timing-function: ease;
+        color: white;
+        
+    }
+    summary:hover{
+        background-image: url("https://addons-media.operacdn.com/media/CACHE/images/themes/95/72895/1.0-rev1/images/93ccab91-6074-4c33-8e46-e595084a0d4e/0dfd2182106b1095cc52bd11ba596698.jpg");
+        margin-top: 20px ;
+        box-shadow: -10px 20px 50px var(--verde_fuerte);
+        border: 5px solid var(--verde_bajo);
+        border-radius: 10px;
+        font-size: 35px;
+        margin-bottom: 20px;
+        color: white;
+    }
+    h2{
+        color: white;
+        font-family: 'Sour Gummy';
+        text-align: center;
+        padding: 30px;
+    }
+    .preguntas{
+        background-image: url("https://addons-media.operacdn.com/media/CACHE/images/themes/95/72895/1.0-rev1/images/93ccab91-6074-4c33-8e46-e595084a0d4e/0dfd2182106b1095cc52bd11ba596698.jpg");
+        background-position: bottom;
+        list-style: none;
+        color: white;
+        padding: 10px;
+        width: 75%;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+        font-family: 'Sour Gummy';
+        text-align: center;
+        font-size: 20px;
+        opacity: 0.9;
+    }
     </style>
 </head>
 <body>
     <header data-bs-theme="dark">
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="https://ferchos777.github.io/proyecto/portada.html">Minecraft</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item"><a class="nav-link" href="contenido_minecraft.html">Contenido</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Historia</a>
-                <ul class="dropdown-menu" style="border-top: 5px solid white;">
-                  <li><a class="dropdown-item" href="creadores.html">Creadores</a></li>
-                  <li><a class="dropdown-item" href="idea.html">Idea</a></li>
-                  <li><a class="dropdown-item" href="Desarrollo.html">Desarrollo</a></li>
-                  <li><a class="dropdown-item" href="Minecraft_hoy.html">Minecraft hoy</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mobs</a>
-                <ul class="dropdown-menu" style="border-top: 5px solid white;">
-                  <li><a class="dropdown-item" href="pagina.html">Clasificaciones</a></li>
-                  <li><a class="dropdown-item" href="pagina1.html">Utilidad</a></li>
-                  <li><a class="dropdown-item" href="pagina2.html">Funcionalidad</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Biomas</a>
-                <ul class="dropdown-menu" style="border-top: 5px solid white;">
-                  <li><a class="dropdown-item" href="Calidos.html">Calidos</a></li>
-                  <li><a class="dropdown-item" href="End.html">End</a></li>
-                  <li><a class="dropdown-item" href="Exuberante.html">Exuberante</a></li>
-                  <li><a class="dropdown-item" href="frios.html">Frios</a></li>
-                  <li><a class="dropdown-item" href="nether.html">Nether</a></li>
-                  <li><a class="dropdown-item" href="nevado.html">Nevado</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Crafteos</a>
-                <ul class="dropdown-menu" style="border-top: 5px solid white;">
-                  <li><a class="dropdown-item" href="HerraminetasPrincipales.html">Funcionalidad</a></li>
-                  <li><a class="dropdown-item" href="clasificacion.html">Clasificacion</a></li>
-                  <li><a class="dropdown-item" href="evolucion.html">Evolucion</a></li>
-                  <li><a class="dropdown-item" href="Funcionalidad craf.html">Herramientas principales</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mods</a>
-                <ul class="dropdown-menu" style="border-top: 5px solid white;">
-                  <li><a class="dropdown-item" href="minecraft.html">Que son</a></li>
-                  <li><a class="dropdown-item" href="minecraft1.html">Clasificacion</a></li>
-                  <li><a class="dropdown-item" href="minecraft2.html">Como fucionan</a></li>
-                  <li><a class="dropdown-item" href="minecraft3.html">Principal uso</a></li>
-                </ul>
-              </li>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="portada.html">Minecraft</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item"><a class="nav-link" href="contenido_minecraft.html">Contenido</a></li>
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Historia</a>
+            <ul class="dropdown-menu" style="border-top: 5px solid white;">
+                <li><a class="dropdown-item" href="creadores.html">Creadores</a></li>
+                <li><a class="dropdown-item" href="idea.html">Idea</a></li>
+                <li><a class="dropdown-item" href="Desarrollo.html">Desarrollo</a></li>
+                <li><a class="dropdown-item" href="Minecraft_hoy.html">Minecraft hoy</a></li>
             </ul>
-          </div>
-        </div>
-      </nav>-
-    </header>
-    <h1>Desarrollo de minecraft</h1>
-    <div class="container my-5">
-        <h2>Evolución y Actualizaciones de Minecraft</h2>
-        <img src="imagenes/Actualizaciones.jpg" alt="Logo Minecraft" width="400">
-        <p>
-            Minecraft comenzó su desarrollo en mayo de 2009 por Markus Persson, conocido como "Notch". Inicialmente, el juego era muy básico, permitiendo solo colocar y destruir bloques en un mundo generado proceduralmente. Sin embargo, a lo largo de los años, Minecraft ha recibido numerosas actualizaciones que han transformado radicalmente su jugabilidad, gráficos y posibilidades.
-        </p>
-        <h2>Actualizaciones Clave</h2>
-        <ul class="list-group list-group-flush mb-4">
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Alpha y Beta (2009-2011):</strong> Se añadieron los primeros mobs, el modo supervivencia, el sistema de salud y hambre, y la posibilidad de craftear objetos.
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Versión 1.0 (2011):</strong> Lanzamiento oficial. Se introdujo el End, el dragón y los logros.
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Actualización 1.4 "Pretty Scary Update" (2012):</strong> Nuevos mobs como la bruja y el murciélago, y mejoras en la inteligencia artificial.
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Actualización 1.7 "The Update that Changed the World" (2013):</strong> Renovación de biomas, nuevos árboles, flores y bloques, y un sistema de generación de mundo mucho más variado.
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Actualización 1.8 "Bountiful Update" (2014):</strong> Nuevos bloques, mobs, y la introducción de los templos submarinos y guardianes.
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Actualización 1.9 "Combat Update" (2016):</strong> Cambios en el sistema de combate, nuevos ataques, escudos y alas "elytra".
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Actualización 1.13 "Update Aquatic" (2018):</strong> Renovación total de los océanos, nuevos mobs acuáticos, bloques y mecánicas de agua.
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Actualización 1.14 "Village & Pillage" (2019):</strong> Renovación de aldeas, nuevos aldeanos, saqueadores y bloques de construcción.
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Actualización 1.16 "Nether Update" (2020):</strong> El Nether se transforma con nuevos biomas, mobs y el material netherite.
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Actualización 1.17/1.18 "Caves & Cliffs" (2021):</strong> Cambios radicales en la generación de cuevas y montañas, nuevos bloques y mobs como el axolote y la cabra.
-            </li>
-            <li class="list-group-item bg-transparent text-white">
-                <strong>Actualización 1.19 "The Wild Update" (2022):</strong> Nuevos biomas como el manglar, el mob Warden y bloques de sculk.
-            </li>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mobs</a>
+            <ul class="dropdown-menu" style="border-top: 5px solid white;">
+              <li><a class="dropdown-item" href="pagina.html">Clasificaciones</a></li>
+              <li><a class="dropdown-item" href="pagina1.html">Utilidad</a></li>
+              <li><a class="dropdown-item" href="pagina2.html">Funcionalidad</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Biomas</a>
+            <ul class="dropdown-menu" style="border-top: 5px solid white;">
+              <li><a class="dropdown-item" href="Calidos.html">Calidos</a></li>
+              <li><a class="dropdown-item" href="End.html">End</a></li>
+              <li><a class="dropdown-item" href="Exuberante.html">Exuberante</a></li>
+              <li><a class="dropdown-item" href="frios.html">Frios</a></li>
+              <li><a class="dropdown-item" href="nether.html">Nether</a></li>
+              <li><a class="dropdown-item" href="nevado.html">Nevado</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Crafteos</a>
+            <ul class="dropdown-menu" style="border-top: 5px solid white;">
+              <li><a class="dropdown-item" href="#">Funcionalidad</a></li>
+              <li><a class="dropdown-item" href="#">Clasificacion</a></li>
+              <li><a class="dropdown-item" href="#">Evolucion</a></li>
+              <li><a class="dropdown-item" href="#">Herramientas principales</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Mods</a>
+            <ul class="dropdown-menu" style="border-top: 5px solid white;">
+              <li><a class="dropdown-item" href="#">Que son</a></li>
+              <li><a class="dropdown-item" href="#">Clasificacion</a></li>
+              <li><a class="dropdown-item" href="#">Como fucionan</a></li>
+              <li><a class="dropdown-item" href="#">Principal uso</a></li>
+            </ul>
+          </li>
         </ul>
-        <p>
-            Cada actualización ha traído consigo cambios significativos, desde la simpleza de los primeros mundos hasta la complejidad de los sistemas actuales. Minecraft sigue evolucionando, manteniéndose como uno de los juegos más influyentes y jugados del mundo.
-        </p>
+      </div>
     </div>
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Historia de Minecraft. Todos los derechos reservados.</p>
-    </footer>
+  </nav>-
+</header>
+    <h1>Actualizaciones de minecraft</h1>
+    <div class="introduccion">
+        <div class="introduccion__item descripcion">
+            Minecraft comenzó su desarrollo en mayo de 2 009 por Markus Persson, conocido como "Notch". Inicialmente, el juego era muy básico, permitiendo solo colocar y destruir bloques en un mundo generado proceduralmente. Sin embargo, a lo largo de los años, Minecraft ha recibido numerosas actualizaciones que han transformado radicalmente su jugabilidad, gráficos y posibilidades.
+        </div>
+        <div class="introduccion__item imagen"></div>
+    </div>
 
-    <!-- Bootstrap JS -->
+    <h2>Actualizaciones más relevantes</h2>
+
+    <div class="actualizaciones">
+<details>
+        <summary>Alpha y Beta (2009-2011)</summary>
+        <ul><li class="preguntas">Se añadieron los primeros mobs, el modo supervivencia, el sistema de salud y hambre, y la posibilidad de craftear objetos.</li></ul>
+    </details>
+    <details>
+        <summary>Versión 1.0 (2011)</summary>
+        <ul><li class="preguntas">Lanzamiento oficial. Se introdujo el End, el dragón y los logros.</li></ul>
+    </details>
+    <details>
+        <summary>Actualización 1.4 "Pretty Scary Update" (2012)</summary>
+        <ul><li class="preguntas">Nuevos mobs como la bruja y el murciélago, y mejoras en la inteligencia artificial.</li></ul>
+    </details>
+    <details>
+        <summary>Actualización 1.7 "The Update that Changed the World" (2013)</summary>
+        <ul><li class="preguntas">Renovación de biomas, nuevos árboles, flores y bloques, y un sistema de generación de mundo mucho más variado.</li></ul>
+    </details>
+    <details>
+        <summary>Actualización 1.8 "Bountiful Update" (2014)</summary>
+        <ul><li class="preguntas">Nuevos bloques, mobs, y la introducción de los templos submarinos y guardianes.</li></ul>
+    </details>
+    <details>
+        <summary>Actualización 1.9 "Combat Update" (2016)</summary>
+        <ul><li class="preguntas">Cambios en el sistema de combate, nuevos ataques, escudos y alas "elytra".</li></ul>
+    </details>
+    <details>
+        <summary>Actualización 1.13 "Update Aquatic" (2018)</summary>
+        <ul><li class="preguntas">Renovación total de los océanos, nuevos mobs acuáticos, bloques y mecánicas de agua</li></ul>
+    </details>
+    <details>
+        <summary>Actualización 1.14 "Village & Pillage" (2019)</summary>
+        <ul><li class="preguntas">Renovación de aldeas, nuevos aldeanos, saqueadores y bloques de construcción.</li></ul>
+    </details>
+    <details>
+        <summary>Actualización 1.16 "Nether Update" (2020)</summary>
+        <ul><li class="preguntas">El Nether se transforma con nuevos biomas, mobs y el material netherite.</li></ul>
+    </details>
+    <details>
+        <summary>Actualización 1.17/1.18 "Caves & Cliffs" (2021)</summary>
+        <ul><li class="preguntas">Cambios radicales en la generación de cuevas y montañas, nuevos bloques y mobs como el axolote y la cabra.</li></ul>
+    </details>
+    <details>
+        <summary>Actualización 1.19 "The Wild Update" (2022)</summary>
+        <ul><li class="preguntas">Nuevos biomas como el manglar, el mob Warden y bloques de sculk.</li></ul>
+    </details>
+
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
-    </section>
+     <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Historia de Minecraft. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
