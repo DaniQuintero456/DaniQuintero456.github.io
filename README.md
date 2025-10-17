@@ -1,30 +1,102 @@
-# Portafolio
-## Programación Web I
-### 0177111 Daniel Bustamante Quintero
-:construction: Proyecto en construcción :construction:
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio web</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    .login-box {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgb(0 0 0 / 0.1);
+      width: 300px;
+    }
+    .login-box h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+      color: #333;
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      width: 100%;
+      padding: 0.6rem;
+      font-size: 1rem;
+      background: #007bff;
+      border: none;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .error-msg {
+      color: crimson;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Iniciar sesión</h2>
+    <form id="loginForm">
+      <label for="username">Usuario</label>
+      <input type="text" id="username" required />
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" required />
+      <div class="error-msg" id="errorMsg">Usuario o contraseña incorrectos</div>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
 
-> Liga de acceso: https://daniquintero456.github.io/
+  <script>
+    // Usuario y contraseña definidos (puedes cambiar)
+    const USER = "liliana";
+    const PASS = "hola_mundo";
 
- - **`Unidad 1`**
-   - `Actividad No. 1` *Hola mundo* **[ Link ]**
-   - `Actividad No. 2` *Títulos* **[ Link ]**
-   - `Actividad No. 2.1` *Mapa de sitio* **[ Link ]**
-   - `Actividad No. 3` *Párrafos* **[ Link ]**
-   - `Actividad No. 4` *Listas* **[ Link ]**
-   - `Actividad No. 4.1` *Plan de estudios* **[ Link ]**
-   - `Actividad No. 5` *Listas* **[ Link ]**
-   - `Actividad No. 6` *Widget* **[ Link ]**
-   - `Actividad No. 7` *Enlaces* **[ Link ]**
-   - `Actividad No. 8` *Imágenes* **[ Link ]**
-   - `Actividad No. 9` *Formatos* **[ Link ]**
-   - `Actividad No. 9.1` *Química orgánica* **[ Link ]**
-   - `Actividad No. 10` *Mapa* **[ Link ]**
- - **`Unidad 2`**
-   - `Actividad No. ?` *...* **[ Link ]**
- - **`Unidad 3`**
-   - `Actividad No. ?` *...* **[ Link ]**
- - **`Proyecto`**
-   - `Proyecto` *...* **[ Link ]**
+    const form = document.getElementById("loginForm");
+    const errorMsg = document.getElementById("errorMsg");
 
-> [!NOTE]
-> Basic writing and formatting syntax [GitHub Doc](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value;
+
+      if (username === USER && password === PASS) {
+        // Usuario y contraseña correctos
+        errorMsg.style.display = "none";
+        window.location.href = "https://daniquintero456.github.io/portafolio.html";
+      } else {
+        errorMsg.style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>
