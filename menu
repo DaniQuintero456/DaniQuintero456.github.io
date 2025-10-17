@@ -77,8 +77,8 @@
 
   <script>
     // Usuario y contraseña definidos (puedes cambiar)
-    const USER = "admin";
-    const PASS = "12345";
+    const USER = "liliana";
+    const PASS = "hola_mundo";
 
     const form = document.getElementById("loginForm");
     const errorMsg = document.getElementById("errorMsg");
@@ -92,7 +92,7 @@
       if (username === USER && password === PASS) {
         // Usuario y contraseña correctos
         errorMsg.style.display = "none";
-        window.location.href = "";
+        window.location.href = "https://daniquintero456.github.io/portafolio.html";
       } else {
         errorMsg.style.display = "block";
       }
@@ -100,4 +100,5 @@
   </script>
 </body>
 </html>
+
 
